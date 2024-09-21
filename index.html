@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AQuality</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="src/styles/main.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="font-Fahkwang m-0">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg ">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center">
+          <a href="#"><img src="assets/img/logo aquality.png" class="logo-nav" draggable="false" alt="AQuality's logo" style="height: 120px;"></a>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="text-gray-800 hover:text-blue-500">Inicio</a>
+          <a href="#acerca-de" class="text-gray-800 hover:text-blue-500">Acerca de</a>
+          <a href="#equipo" class="text-gray-800 hover:text-blue-500">Equipo</a>
+          <a href="#contacto" class="text-gray-800 hover:text-blue-500">Contacto</a>
+        </div>
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Menú colapsado para pantallas pequeñas -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+      <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Inicio</a>
+      <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Acerca de</a>
+      <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Equipo</a>
+      <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- Welcome to AQuality -->
+  <div class="container px-4 mx-auto py-10" style="height:80vh;">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl font-bold aquality">AQuality</h1>
+        <h3 class="text text-lg font-bold">Cada gota cuenta, cada hogar importa.</h3>
+        <p class="text-gray-600 text-lg">
+          Combinamos <span id="tech">tecnología</span> y sostenibilidad para ofrecerte una forma inteligente de gestionar el agua, ahorrando y protegiendo este recurso esencial.
+        </p>
+      </div>
+      <div class="text-center">
+        <img src="assets/img/vector.png"   draggable="false" class="mx-auto h-96 vert-move vector" alt="Vector de AQuality">
+      </div>
+    </div>
+  </div>
+
+  <!-- Introduction to the idea -->
+  <div class="container px-4 mx-auto py-20 text-center" style="height: 70vh;" data-aos="fade-up">
+    <h2 class="text-2xl font-bold">¿Estamos consumiendo el agua de la mejor manera?</h2>
+    <div class="text-mini mx-auto">
+      <p class="mt-3 text-gray-600 text-lg">Sumando las comidas y bebidas que ingerimos y las distintas actividades que realizamos cada día, el consumo diario de agua de un chileno promedio asciende a una cifra de entre <b> 125-200 litros</b>.</p>
+    </div>
+  </div>
+
+  <div class="container px-4 mx-auto py-20 text-center">
+    <!-- two columns, centered vertically -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div data-aos="fade-up" class="mx-auto">
+        <h2 class="text-2xl font-bold text-left">Agua Sostenible: El Compromiso de la ONU y el rol de AQuality </h2>
+        <p class="mt-2 text-gray-600 text-lg text-left rounded">El <b>Objetivo de Desarrollo Sostenible 6 (ODS 6)</b> de la ONU se centra en <b>garantizar la disponibilidad y gestión sostenible del agua y el saneamiento para todos</b>. Este objetivo es fundamental para enfrentar los desafíos globales relacionados con el acceso al agua potable, la escasez de agua, la contaminación de los recursos hídricos y la falta de saneamiento adecuado.</p>
+        <br>
+        <p class="text-gray-600 text-lg text-left">
+          <b>El ODS 6 busca garantizar el acceso al agua potable y promover su uso eficiente en todos los sectores</b>, destacando la protección de los ecosistemas hídricos para un suministro sostenible.
+        <br>
+        <p class="text-gray-600 text-lg text-left">
+          AQuality es una solución tecnológica que apoya el ODS 6, utilizando sensores y una interfaz intuitiva para optimizar el consumo de agua en el hogar.
+        </p>
+        
+      </div>
+      <div data-aos="fade-up" class="mx-auto">
+        <a href="https://www.un.org/sustainabledevelopment/es/water-and-sanitation/" target="blank">        <img src="assets/img/ods6.png" class="onu" style="height: 300px;" draggable="false" alt=""></a>
+
+      </div>
+    </div>
+  </div>
+  <!-- AQUALITY! -->
+   <div class="container px-4 mx-auto pt-20 text-center">
+    <img src="assets/img/logofull.png" draggable="false" id="acerca-de" class="vert-move" style="height: 450px; margin: auto;" alt="">
+   </div>
+<!-- waves -->
+
+  
+  <div class="container px-auto mx-auto  primary-bg max-w-full m-0 p-0">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L21.8,176C43.6,192,87,224,131,229.3C174.5,235,218,213,262,181.3C305.5,149,349,107,393,85.3C436.4,64,480,64,524,69.3C567.3,75,611,85,655,117.3C698.2,149,742,203,785,202.7C829.1,203,873,149,916,138.7C960,128,1004,160,1047,144C1090.9,128,1135,64,1178,80C1221.8,96,1265,192,1309,192C1352.7,192,1396,96,1418,48L1440,0L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></path></svg>
+    <!-- ¿Qué es AQuality -->
+    <div class="container px-4 mx-auto py-10 text-center">
+      <!-- two columns, centered vertically -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div data-aos="fade-up" class="mx-auto">
+          <h2 class="text-3xl font-bold text-white text-left">AQuality: La Revolución del Consumo Inteligente de Agua en tu Hogar</h2>
+          <p class="mt-2 text-white text-lg text-left rounded">AQuality es la revolución que tu hogar necesita para hacer un uso responsable y eficiente del agua. En un mundo donde <b>cada gota cuenta</b>, esta aplicación te <b>ofrece una nueva manera de controlar, gestionar y optimizar tu consumo diario</b>. Imagina tener al alcance de tu mano una <b>herramienta que no solo te ayuda a ahorrar, sino que también contribuye al cuidado del medio ambiente</b>. Con AQuality, transformas la manera en que interactúas con el agua, <b>asegurando un futuro más sostenible para ti y para el planeta</b>. ¡El poder de cambiar está en tus manos!</p>
+          <br>
+          <p class="text-gray-600 text-lg text-left">
+            <b>El ODS 6 busca garantizar el acceso al agua potable y promover su uso eficiente en todos los sectores</b>, destacando la protección de los ecosistemas hídricos para un suministro sostenible.
+          <br>
+          
+        </div>
+        <div data-aos="fade-up" class="mx-auto">
+          <img src="assets/img/Frame 5 (2).png" draggable="false" class="screenshots" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container px-auto mx-auto py-10 primary-bg max-w-full m-0 p-0">
+  <!-- ¿Qué es AQuality -->
+  <div class="container px-auto mx-auto py-10 mb-4 text-center">
+    <!-- two columns, centered vertically -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div data-aos="fade-up video-radius" class="mx-auto">
+        <div class="iframe-container">
+          <iframe width="588" height="357" class="responsive-iframe w-full aspect-video p-4" src="https://www.youtube.com/embed/kVJovqyuJOQ" title="Esto es AQuality" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="mx-auto px-4">
+        <h2 class="text-3xl font-bold text-white text-right">Características de AQuality</h2>
+        <p class="mt-2 text-white text-lg text-right rounded">AQuality te ofrece una serie de herramientas avanzadas que hacen que la gestión del agua en tu hogar sea más sencilla y eficiente. A continuación, te presentamos todo lo que nuestra aplicación pone a tu disposición para optimizar tu consumo y mejorar la calidad del agua:</p>
+        <br>
+        <ul class="text-white">
+          <li><p class="text-white text-lg text-right"><b>Monitoreo de Agua:</b> Control en tiempo real de la calidad del agua.</p></li>
+          <li><p class="text-white text-lg text-right"><b>Niveles de pH, Turbidez y TDS:</b> Conoce las condiciones de tu agua al instante.</p></li>
+          <li><p class="text-white text-lg text-right"><b>Consumo Estimado de Agua:</b> Visualiza tu consumo de manera detallada.</p></li>
+          <li><p class="text-white text-lg text-right"><b>Creación de Planes Personalizados:</b> Ajusta tus hábitos con recomendaciones basadas en tus estadísticas.</p></li>
+          <li><p class="text-white text-lg text-right"><b>Seguimiento del Consumo:</b> Controla tu consumo anual, mensual y semanalmente.</p></li>
+          <li><p class="text-white text-lg text-right"><b>Educación y Sostenibilidad:</b> Consejos prácticos para un uso responsable del agua.</p></li>
+        </ul>
+        <br>
+        
+      </div>
+    </div>
+  </div>
+
+<!-- ¿Por qué usar? -->
+<div class="container mx-auto py-20 mt-4  primary-bg max-w-full m-0 p-0" data-aos="fade-up">
+  <h2 class="text-3xl font-bold text-white text-center">¿Por qué deberías usar AQuality?</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-center mt-3">
+    <div class="mx-auto p-4">
+      <svg class="mx-auto icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100" color="#ffffff" fill="none">
+        <path d="M20.016 2C18.9026 2 18 4.68629 18 8H20.016C20.9876 8 21.4734 8 21.7741 7.66455C22.0749 7.32909 22.0225 6.88733 21.9178 6.00381C21.6414 3.67143 20.8943 2 20.016 2Z" stroke="currentColor" stroke-width="1.5" />
+        <path d="M18 8.05426V18.6458C18 20.1575 18 20.9133 17.538 21.2108C16.7831 21.6971 15.6161 20.6774 15.0291 20.3073C14.5441 20.0014 14.3017 19.8485 14.0325 19.8397C13.7417 19.8301 13.4949 19.9768 12.9709 20.3073L11.06 21.5124C10.5445 21.8374 10.2868 22 10 22C9.71321 22 9.45546 21.8374 8.94 21.5124L7.02913 20.3073C6.54415 20.0014 6.30166 19.8485 6.03253 19.8397C5.74172 19.8301 5.49493 19.9768 4.97087 20.3073C4.38395 20.6774 3.21687 21.6971 2.46195 21.2108C2 20.9133 2 20.1575 2 18.6458V8.05426C2 5.20025 2 3.77325 2.87868 2.88663C3.75736 2 5.17157 2 8 2H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M6 6H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M8 10H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.5 10.875C11.6716 10.875 11 11.4626 11 12.1875C11 12.9124 11.6716 13.5 12.5 13.5C13.3284 13.5 14 14.0876 14 14.8125C14 15.5374 13.3284 16.125 12.5 16.125M12.5 10.875C13.1531 10.875 13.7087 11.2402 13.9146 11.75M12.5 10.875V10M12.5 16.125C11.8469 16.125 11.2913 15.7598 11.0854 15.25M12.5 16.125V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+    </svg>
+      <h3 class="text-lg text-center font-bold features">Ahorro en Facturas</h3>
+      <p class="text-white text-lg text-center">La aplicación te ayuda a reducir el consumo de agua mediante planes de consumo personalizados, lo que se traduce en un ahorro significativo en tus factures mensuales.</p>
+    </div>
+    <div class="mx-auto  p-4 ">
+      <svg class="mx-auto icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100" color="#ffffff" fill="none">
+        <path d="M7.64584 15.7108C7.23279 14.8966 7 13.9755 7 13C7 9.78484 9.5 7.5 13 7C17.0817 6.4169 18.8333 4.16667 20 3C23.5 16 17 19 13 19C11.9071 19 10.8825 18.7078 10 18.1973" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M3 21C3.5 18 5.45791 16.1355 10 15C13.2167 14.1958 15.4634 12.1791 17 10.0549" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+    </svg>
+    
+      <h3 class="text-lg text-center font-bold features">Sostenibilidad Ambiental</h3>
+      <p class="text-white text-lg text-center">Al utilizar AQuality, contribuyes al uso responsable del agua, ayudando a preservar este recurso vital para futuras generaciones.</p>
+    </div> 
+    <div class="mx-auto p-4">
+      <svg class="mx-auto icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="" color="#ffffff" fill="none">
+        <path d="M12.5 5.5H10.5C9.55719 5.5 9.08579 5.5 8.79289 5.79289C8.5 6.08579 8.5 6.55719 8.5 7.5V9.5C8.5 10.4428 8.5 10.9142 8.79289 11.2071C9.08579 11.5 9.55719 11.5 10.5 11.5H12.5C13.4428 11.5 13.9142 11.5 14.2071 11.2071C14.5 10.9142 14.5 10.4428 14.5 9.5V7.5C14.5 6.55719 14.5 6.08579 14.2071 5.79289C13.9142 5.5 13.4428 5.5 12.5 5.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+        <path d="M13 11.5H10V21.5H13V11.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M7.5 21.5H15.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M14.5 7H18.5C20.1569 7 21.5 8.34315 21.5 10V12.5H18.5V10H14.5V7Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+        <path d="M14.5 2.5H9.09949C7.83781 2.5 7.20696 2.5 6.70992 2.82302C6.21288 3.14603 5.95667 3.7225 5.44425 4.87545L2.5 11.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M20 15.5L20.5582 14.9991C20.4159 14.8406 20.213 14.75 20 14.75C19.787 14.75 19.5841 14.8406 19.4418 14.9991L20 15.5ZM20.75 18C20.75 18.4142 20.4142 18.75 20 18.75V20.25C21.2426 20.25 22.25 19.2426 22.25 18H20.75ZM20 18.75C19.5858 18.75 19.25 18.4142 19.25 18H17.75C17.75 19.2426 18.7574 20.25 20 20.25V18.75ZM19.25 18C19.25 18.003 19.2507 17.969 19.2771 17.8886C19.3022 17.8119 19.343 17.7162 19.4012 17.6031C19.5182 17.3759 19.6824 17.1227 19.8589 16.8772C20.0335 16.6345 20.2097 16.4137 20.3431 16.2528C20.4094 16.1727 20.4644 16.1084 20.5023 16.0646C20.5212 16.0428 20.5358 16.0262 20.5454 16.0153C20.5502 16.0099 20.5537 16.0059 20.5559 16.0035C20.557 16.0023 20.5577 16.0015 20.5581 16.001C20.5583 16.0008 20.5584 16.0007 20.5584 16.0007C20.5584 16.0007 20.5584 16.0007 20.5584 16.0007C20.5584 16.0007 20.5583 16.0008 20.5583 16.0008C20.5583 16.0008 20.5582 16.0009 20 15.5C19.4418 14.9991 19.4417 14.9992 19.4417 14.9992C19.4416 14.9993 19.4415 14.9994 19.4415 14.9994C19.4414 14.9996 19.4412 14.9997 19.441 14.9999C19.4407 15.0003 19.4403 15.0008 19.4397 15.0014C19.4387 15.0026 19.4373 15.0042 19.4355 15.0061C19.432 15.0101 19.4271 15.0156 19.4209 15.0226C19.4085 15.0367 19.3909 15.0568 19.3688 15.0822C19.3246 15.1332 19.2625 15.2059 19.1882 15.2955C19.0403 15.4739 18.8415 15.7228 18.6411 16.0015C18.4426 16.2774 18.2318 16.5975 18.0675 16.9166C17.9157 17.2115 17.75 17.6053 17.75 18H19.25ZM20 15.5C19.4418 16.0009 19.4417 16.0008 19.4417 16.0008C19.4417 16.0008 19.4416 16.0007 19.4416 16.0007C19.4416 16.0007 19.4416 16.0007 19.4416 16.0007C19.4416 16.0007 19.4417 16.0008 19.4419 16.001C19.4423 16.0015 19.443 16.0023 19.4441 16.0035C19.4463 16.0059 19.4498 16.0099 19.4546 16.0153C19.4642 16.0262 19.4788 16.0428 19.4977 16.0646C19.5356 16.1084 19.5906 16.1727 19.6569 16.2528C19.7903 16.4137 19.9665 16.6345 20.1411 16.8772C20.3176 17.1227 20.4818 17.3759 20.5988 17.6031C20.657 17.7162 20.6978 17.8119 20.7229 17.8886C20.7493 17.969 20.75 18.003 20.75 18H22.25C22.25 17.6053 22.0843 17.2115 21.9325 16.9166C21.7682 16.5975 21.5574 16.2774 21.3589 16.0015C21.1585 15.7228 20.9597 15.4739 20.8118 15.2955C20.7375 15.2059 20.6754 15.1332 20.6312 15.0822C20.6091 15.0568 20.5915 15.0367 20.5791 15.0226C20.5729 15.0156 20.568 15.0101 20.5645 15.0061C20.5627 15.0042 20.5613 15.0026 20.5603 15.0014C20.5597 15.0008 20.5593 15.0003 20.559 14.9999C20.5588 14.9997 20.5586 14.9996 20.5585 14.9994C20.5585 14.9994 20.5584 14.9993 20.5583 14.9992C20.5583 14.9992 20.5582 14.9991 20 15.5Z" fill="currentColor" />
+        <path d="M11.5 2.5V5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+      <h3 class="text-lg text-center font-bold features">Mejora la Calidad del Agua</h3>
+      <p class="text-white text-lg text-center">Te ayuda a asegurarte de que el agua en tu hogar siempre esté dentro de los parámetros adecuados, mejorares así la calidad del agua que consumes a diario.</p>
+    </div>
+    <div class="mx-auto p-4">
+      <svg class="mx-auto icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100" color="#ffffff" fill="none">
+        <path d="M5.5 13L5.5 13.009" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M18.5 10.9922L18.5 11.0012" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M18 18.548C18 18.548 17.0738 18.548 16.5455 18.548C14.6865 18.548 12.9891 18.9166 11.697 19.524C10.4048 20.1314 8.70746 20.5 6.84848 20.5C5.81486 20.5 4.83121 20.3861 3.93939 20.1805C3.36611 20.0483 3.07946 19.9822 2.73599 19.7087C2.54009 19.5527 2.29559 19.2439 2.18823 19.0168C2 18.6188 2 18.2328 2 17.4608V6.94737C2 5.98619 3.00851 5.32602 3.93939 5.54061C4.37533 5.64111 4.919 5.80594 5.39394 5.86004" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M21.9999 17.5V6.61397C21.9999 5.12036 21.5816 4.18968 19.9999 3.8274C19.0802 3.61675 18.0658 3.5 16.9999 3.5C15.0828 3.5 13.3324 3.87764 11.9999 4.5C11.2804 4.83602 10.4235 5.32757 9.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M13.7678 13.768C13.3154 14.2204 12.6904 14.5002 12 14.5002C10.6193 14.5002 9.5 13.3809 9.5 12.0002C9.5 11.3098 9.77982 10.6848 10.2322 10.2324" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        <path d="M2 2L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+    </svg>
+      <h3 class="text-lg text-center font-bold features">Completamente Gratuita</h3>
+
+      <p class="text-white text-lg text-center">Aprovecha todas estas ventajas sin ningún costo, lo que te permite mejorar el manejod ela gua en tu hogar de forma gratuita y sin compromisos</p>
+    </div>
+  </div>
+</div>
+
+<div class="container mx-auto py-20 mt-4  primary-bg max-w-full m-0 p-0" data-aos="fade-up">
+  <h2 class="text-3xl font-bold text-white text-center">¿Por qué tu empresa debería usar AQuality?</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-center mt-3">
+    <div class="mx-auto p-4">
+      <!-- svg -->
+      <svg class="icon mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100" color="#ffffff" fill="none">
+        <path d="M14.5 9C14.5 10.3807 13.3807 11.5 12 11.5C10.6193 11.5 9.5 10.3807 9.5 9C9.5 7.61929 10.6193 6.5 12 6.5C13.3807 6.5 14.5 7.61929 14.5 9Z" stroke="currentColor" stroke-width="1.5" />
+        <path d="M18.2222 17C19.6167 18.9885 20.2838 20.0475 19.8865 20.8999C19.8466 20.9854 19.7999 21.0679 19.7469 21.1467C19.1724 22 17.6875 22 14.7178 22H9.28223C6.31251 22 4.82765 22 4.25311 21.1467C4.20005 21.0679 4.15339 20.9854 4.11355 20.8999C3.71619 20.0475 4.38326 18.9885 5.77778 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M13.2574 17.4936C12.9201 17.8184 12.4693 18 12.0002 18C11.531 18 11.0802 17.8184 10.7429 17.4936C7.6543 14.5008 3.51519 11.1575 5.53371 6.30373C6.6251 3.67932 9.24494 2 12.0002 2C14.7554 2 17.3752 3.67933 18.4666 6.30373C20.4826 11.1514 16.3536 14.5111 13.2574 17.4936Z" stroke="currentColor" stroke-width="1.5" />
+    </svg>
+      <h3 class="text-lg text-center font-bold features">Gestión georeferencial</h3>
+      <p class="text-white text-lg text-center">El sistema de gestión georeferencial perimite a las empresas sanitarias identificar patrones de consumoa  nivel local, facilitando una planificación más eficiente de infraestructuras y redes de distribución. Esto no solo optimiza costos, isno que tambíen permite una mejor respuesta a emergencias o zonas con problemas de abastecimiento.</p>
+    </div>
+    <div class="mx-auto  p-4 ">
+      <!-- svg -->
+      <svg class="mx-auto icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100" color="#ffffff" fill="none">
+        <path d="M3.51256 9.48744C4.02513 10 4.85008 10 6.5 10C8.14992 10 8.97487 10 9.48744 9.48744C10 8.97487 10 8.14992 10 6.5C10 4.85008 10 4.02513 9.48744 3.51256C8.97487 3 8.14992 3 6.5 3C4.85008 3 4.02513 3 3.51256 3.51256C3 4.02513 3 4.85008 3 6.5C3 8.14992 3 8.97487 3.51256 9.48744Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M3.51256 20.4874C4.02513 21 4.85008 21 6.5 21C8.14992 21 8.97487 21 9.48744 20.4874C10 19.9749 10 19.1499 10 17.5C10 15.8501 10 15.0251 9.48744 14.5126C8.97487 14 8.14992 14 6.5 14C4.85008 14 4.02513 14 3.51256 14.5126C3 15.0251 3 15.8501 3 17.5C3 19.1499 3 19.9749 3.51256 20.4874Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M15 4H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M15 15H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M15 9H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M15 20H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+      <h3 class="text-lg text-center font-bold features">Cumplimiento de Objetivos Sostenibles</h3>
+      <p class="text-white text-lg text-center">Las corporaciones están bajo presión para alinearse con los Objetivos de Desarrollo Sostenible (ODS). AQuality, al estar alineaa con el ODS 6 (agua limpia y saneamiento), ayua a las empresas a cumplir con sus compromisos de sostenibilidad, lo que puede mejorar su reputación y reducir riesgos asociados a la mala gestión del agua.
+    </div>
+    <div class="mx-auto p-4">
+      <!-- svg -->
+      <svg class="icon mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100" color="#ffffff" fill="none">
+        <path d="M5.18007 15.2964C3.92249 16.0335 0.625213 17.5386 2.63348 19.422C3.6145 20.342 4.7071 21 6.08077 21H13.9192C15.2929 21 16.3855 20.342 17.3665 19.422C19.3748 17.5386 16.0775 16.0335 14.8199 15.2964C11.8709 13.5679 8.12906 13.5679 5.18007 15.2964Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M14 7C14 9.20914 12.2091 11 10 11C7.79086 11 6 9.20914 6 7C6 4.79086 7.79086 3 10 3C12.2091 3 14 4.79086 14 7Z" stroke="currentColor" stroke-width="1.5" />
+        <path d="M16.7612 3.27615C17.5657 2.81923 18.2679 3.00336 18.6897 3.29667C18.8626 3.41693 18.9491 3.47706 19 3.47706C19.0509 3.47706 19.1374 3.41693 19.3103 3.29667C19.7321 3.00336 20.4343 2.81923 21.2388 3.27615C22.2946 3.87582 22.5335 5.85413 20.0981 7.52315C19.6343 7.84105 19.4024 8 19 8C18.5976 8 18.3657 7.84105 17.9019 7.52315C15.4665 5.85413 15.7054 3.87582 16.7612 3.27615Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+    </svg>
+      <h3 class="text-lg text-center font-bold features">Satisfacción al Cliente</h3>
+      <p class="text-white text-lg text-center">Ofrecer AQuality a sus clientes como parte de su servicio mejoraría significativamente la experiencia del usuario, proporcionando transparencia sobre la calidad y el consumo del agua. Esto puede mejorar la fidelización del cliente y aumentar la percepción positiva de la corporación.</p>
+    </div>
+    <div class="mx-auto p-4">
+      <svg class="icon mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100" color="#ffffff" fill="none">
+        <path d="M14 8H10C7.518 8 7 8.518 7 11V22H17V11C17 8.518 16.482 8 14 8Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+        <path d="M11 12L13 12M11 15H13M11 18H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M21 22V8.18564C21 6.95735 21 6.3432 20.7013 5.84966C20.4026 5.35612 19.8647 5.08147 18.7889 4.53216L14.4472 2.31536C13.2868 1.72284 13 1.93166 13 3.22873V7.7035" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M3 22V13C3 12.1727 3.17267 12 4 12H7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M22 22H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+      <h3 class="text-lg text-center font-bold features">Impacto Social y Medioambiental Positivo</h3>
+
+      <p class="text-white text-lg text-center">Al adoptar y promover el uso de AQuality, las corporaciones pueden fortalecer su responsabilidad social empresarial, contribuyendo a un uso más responsable del agua y a la reducción ed la huella ambiental, lo que mejora su imagen y los hace más atractivos para los inversionistas conscientes del impacto social.</p>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#425566" fill-opacity="1" d="M0,32L26.7,69.3C53.3,107,107,181,160,197.3C213.3,213,267,171,320,149.3C373.3,128,427,128,480,133.3C533.3,139,587,149,640,176C693.3,203,747,245,800,218.7C853.3,192,907,96,960,96C1013.3,96,1067,192,1120,234.7C1173.3,277,1227,267,1280,240C1333.3,213,1387,171,1413,149.3L1440,128L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
+</div>
+
+
+    <!-- Introduction to the idea -->
+    <div class="container mx-auto py-20 text-center"  data-aos="fade-up">
+      <h2 class="text-2xl font-bold" id="equipo">Equipo</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-mini mx-auto mt-6">
+        <!-- Columna 1 -->
+        <div>
+          <img src="assets/img/alejandro.jpg" style="height: 200px; width: 200px;" class="rounded mb-2 mx-auto" alt="Alejandro Lienqueo" class="mx-auto mb-4">
+          <h3 class=" text-center font-bold">Alejandro Lienqueo</h3>
+          <p class="text-gray-600 text-lg">Gestor de Marketing y Estrategias Publicitarias</p>
+        </div>
+        <!-- Columna 2 -->
+        <div>
+          <img src="assets/img/pancho.jpg" style="height: 200px; width: 200px;" class="rounded mb-2 mx-auto" alt="Francisco Muñoz" class="mx-auto mb-4">
+          <h3 class=" text-center font-bold">Francisco Muñoz</h3>
+          <p class="text-gray-600 text-lg">Principal Desarrollador y Programador</p>
+        </div>
+        <!-- Columna 3 -->
+        <div>
+          <img src="assets/img/hector.jpg" style="height: 200px; width: 200px;" class="rounded mb-2 mx-auto" alt="Héctor Lema" class="mx-auto mb-4">
+          <h3 class=" text-center font-bold">Héctor Lema</h3>
+            <p class="text-gray-600 text-lg">Diseñador de Prototipos y Programador Secundario</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- que esperan? -->
+    <div class="container mx-auto py-20 text-center px-4">
+      <!-- two columns, centered vertically -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div data-aos="fade-up" class="mx-auto">
+          <h2 class="text-2xl font-bold text-left">¿Qué esperas?</h2>
+          <p class="mt-2 text-gray-600 text-lg text-left rounded">Aprovecha la oportunidad de transformar tu hogar en un espacio más eficiente, sostenible y consciente del uso del agua. Con AQuality, no solo estarás mejorando la calidad del agua que consumes, sino también contribuyendo a un futuro más responsable para nuestro planeta. Es gratis, fácil de usar y te ayudará a ahorrar mientras cuidas un recurso vital. ¡Da el paso hacia un consumo inteligente de agua y únete al cambio con AQuality hoy mismo!</p>
+          <br>
+
+        </div>
+        <div data-aos="fade-up" class="mx-auto">
+          <img src="assets/img/vector2.jpg" class="mx-auto" style="height: 300px;" alt="">
+  
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact us -->
+     <div class="container mx-auto py20 text-center " id="contacto" data-aos="fade-up">
+      <div class="max-w-xl mx-auto py-10">
+        <h2 class="text-2xl font-bold text-center">Contáctanos</h2>
+        <form action="https://formspree.io/f/xjkbqydk" method="post" class="mt-6">
+          <div class="mb-4">
+            <label for="first-name" class="block text-sm">Nombre</label>
+            <input style="font-family: Ubuntu Condensed;" type="text" name="first-name" required id="first-name" class="w-full mt-1 p-2 border border-gray-300 rounded">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-sm">Email</label>
+            <input style="font-family: Ubuntu Condensed;" type="email" name="email" id="email" required class="w-full mt-1 p-2 border border-gray-300 rounded">
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-sm">Mensaje</label>
+            <textarea style="font-family: Ubuntu Condensed;" name="message" id="message" required rows="4" class="w-full mt-1 p-2 border border-gray-300 rounded"></textarea>
+          </div>
+          <button type="submit" class="w-full enviar text-white py-2 rounded">Enviar</button>
+        </form>
+      </div>
+     </div>
+
+     <footer class="primary-bg text-white py-4 mt-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 AQuality. Todos los derechos reservados</p>
+      </div>
+     </footer>
+  <script>
+    // Toggle menu visibility
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800
+    });
+  </script>
+</body>
+</html>

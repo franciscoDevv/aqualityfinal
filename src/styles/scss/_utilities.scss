@@ -1,0 +1,32 @@
+// _utilities.scss
+@import 'variables';
+
+.text-mini {
+  width: 50%;
+}
+
+.onu, .screenshots {
+  transition: .4s;
+  &:hover {
+    transform: scale(1.05);
+    transition: .4s;
+  }
+}
+
+.primary-bg {
+  background-color: $primary;
+}
+
+.video-radius {
+  border-radius: 15px;
+}
+
+video {
+  border-radius: 15px;
+}
+
+svg {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}

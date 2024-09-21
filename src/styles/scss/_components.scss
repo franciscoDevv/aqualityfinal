@@ -1,0 +1,48 @@
+// _components.scss
+@import 'variables';
+
+.nav-link {
+  font-size: large;
+  font-weight: 500;
+}
+
+.brand-name {
+  font-weight: 800;
+  font-size: 90px;
+  text-decoration: underline;
+}
+
+.intro {
+  font-weight: 600;
+}
+
+.actual {
+  color: $primary;
+}
+
+.tech {
+  color: $primary;
+  font-weight: 800;
+}
+
+
+.icon {
+  transition: .4s;
+  &:hover {
+    transform: scale(1.05);
+    transition: .4s;
+  }
+}
+
+.enviar {
+  background-color: $primary;
+  font-weight: 600;
+  font-family: "Ubuntu Condensed";
+  transition: .4s;
+  &:hover {
+    background-color: $secondary;
+    transition: .4s;
+    transform: scale(1.05);
+    text-decoration: underline;
+  }
+}

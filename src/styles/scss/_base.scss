@@ -1,0 +1,51 @@
+@import 'variables';
+
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2 {
+  font-family: "Fahkwang";
+  color: #425566;
+}
+
+h3 {
+  font-family: "Fahkwang";
+  color: $secondary;
+  font-weight: 800;
+}
+
+.features {
+  color: #fff;
+  transition: .3s;
+  text-decoration: underline;
+  font-weight: 800;
+  &:hover {
+    color: $secondary;
+    transition: .3s;
+    transform: scale(1.05);
+  }
+}
+
+p, a, span {
+  font-family: "Ubuntu Condensed";
+}
+
+ul {
+  li {
+    color: #fff;
+  }
+}
+
+label {
+  font-family: "Ubuntu Condensed";
+
+  font-weight: 800;
+}
+
+input {
+  font-family: "Ubuntu Condensed";}
