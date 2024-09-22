@@ -151,3 +151,12 @@ svg {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.secondary-bg {
+  background-color:#4698a3;
+  transition: .4s;
+}
+
+.secondary-bg:hover {
+  background-color: gray;
+}
