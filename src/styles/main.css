@@ -160,3 +160,8 @@ svg {
 .secondary-bg:hover {
   background-color: gray;
 }
+
+.link {
+  color: #4698a3;
+  text-decoration: underline;
+}
